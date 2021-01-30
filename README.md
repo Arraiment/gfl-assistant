@@ -6,7 +6,8 @@ Currently scrapes 3 websites:
  2. [Angry Trap Midget's Guide to why your waifu sucks](https://gfl.matsuda.tips/dolls/)
  3. [GamePress's GFL Wiki](https://gamepress.gg/girlsfrontline/)
 
-Built with node.js and express.js, repo serves as documentation and version tracking
+Built with node.js and express.js, repo serves as documentation and version tracking.
+
 Will probably find somewhere to host in the future.
 # To do
 
