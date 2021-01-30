@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        include header.pug
+        include script.js
+        style
+            include style.css
+    body
+        .container.choices
+            h2 Select doll...
+            #accordion
+                .card
+                    if choices1 == 0
+                        button.card-header.disabled(data-toggle='collapse' href='#c1') No doll found with that name
+                        #c1.collapse.show(data-parent='#accordion')
+                    else if choices1.length == 1
+                        button.card-header.disabled(data-toggle='collapse' href='#c1')= choices1[0]
+                        #c1.collapse.show(data-parent='#accordion')
+                    else
+                        button.card-header(data-toggle='collapse' href='#c1') Select for GFL Corner
+                        #c1.collapse.show(data-parent='#accordion')
+                            .d-flex.flex-wrap
+                                each val, index in choices1
+                                    a.list-group-item(href="#1")= val
+                .card
+                    if choices2 == 0
+                        button.card-header.disabled(data-toggle='collapse' href='#c2') No doll found with that name
+                        #c2.collapse(data-parent='#accordion')
+                    else if choices2.length == 1
+                        button.card-header.disabled(data-toggle='collapse' href='#c2')= choices2[0]
+                        #c2.collapse(data-parent='#accordion')
+                    else
+                        button.card-header(data-toggle='collapse' href='#c2') Select for ATMG
+                        #c2.collapse(data-parent='#accordion')
+                            .d-flex.flex-wrap
+                                each val, index in choices2
+                                    a.list-group-item(href="#2")= val
+                .card
+                    if choices3 == 0
+                        button.card-header.disabled(data-toggle='collapse' href='#c3') No doll found with that name
+                        #c3.collapse(data-parent='#accordion')
+                    else if choices3.length == 1
+                        button.card-header.disabled(data-toggle='collapse' href='#c3')= choices3[0]
+                        #c3.collapse(data-parent='#accordion')
+                    else
+                        button.card-header(data-toggle='collapse' href='#c3') Select for Gamepress
+                        #c3.collapse(data-parent='#accordion')
+                            .d-flex.flex-wrap
+                                each val, index in choices3
+                                    a.list-group-item(href="#3")= val
+            #submit.card Go ᐳ

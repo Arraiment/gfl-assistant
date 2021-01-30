@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        include header.pug
+        style
+            include style.css
+    body
+        .container.my-5
+            .row
+                .col-sm-4.text-center.mb-3
+                    img.mx-auto.d-block.mb-2(src='https://iopwiki.com/images/c/cb/M4A1_S.png')
+                    h4#dollName= dollname
+                    a(href='https://iopwiki.com/wiki/M4A1' target='_blank') GFL Wiki entry
+                .col-sm-8
+                    h2 Doll Overview
+                    #accordion
+                        .box
+                            button.accordioBtn(type='button' data-toggle='collapse' href='#collapse1')
+                                .d-flex.flex-row.justify-content-between.align-content-center
+                                    h5 GFL Analysis
+                                    span.material-icons launch
+                                #collapse1.collapse(data-parent='#accordion')
+                                    p= analysis[0]
+                        .box
+                            button.accordioBtn(type='button' data-toggle='collapse' href='#collapse2')
+                                .d-flex.flex-row.justify-content-between.align-content-center
+                                    h5 ATMG Analysis
+                                    span.material-icons launch
+                                #collapse2.collapse(data-parent='#accordion')
+                                    p= analysis[1]
+                        .box
+                            button.accordioBtn(type='button' data-toggle='collapse' href='#collapse3')
+                                .d-flex.flex-row.justify-content-between.align-content-center
+                                    h5 GamePress Analysis
+                                    span.material-icons launch
+                                #collapse3.collapse(data-parent='#accordion')
+                                    p= analysis[2]

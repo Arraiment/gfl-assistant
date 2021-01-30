@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    color: #f0b000;
+    font-size: 9vw;
+}
+
+h2 {
+    color: #f0b000;
+    font-size: 5vw;
+}
+
+h5 {
+    margin: 0;
+    line-height: 2;
+}
+
+input {
+    border: 2px solid #f0b000;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    padding: 1.25em 2em;
+    width: 55vw;
+}
+
+img {
+    border-radius: 7px;
+}
+
+a {
+    color: #f0b000;
+}
+
+a:hover {
+    color: #bd8a00;
+    text-decoration: none;
+}
+
+#accordion {
+    width: 80%;
+    text-align: left;
+}
+
+.card {
+    border: 2px solid #f0b000;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    padding: .5em 1em;
+    margin-bottom: .5em;
+}
+
+#submit {
+    display: none;
+    cursor: pointer;
+    border: 2px solid #228B22;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+}
+.card-header {
+    color: #f0b000;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.disabled {
+    color: #A37800;
+}
+
+.list-group-item {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.choices {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.box .accordioBtn {
+  width: 100%;
+  text-align: left;
+  border: 2px solid #f0b000;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: .5em 1em;
+  margin-bottom: .5em;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 9vw;
+    }
+
+    input {
+        width: 80vw;
+    }
+
+    .card-header{
+        font-size: 5vw;
+    }
+
+    .box .accordioBtn{
+        margin-bottom: .25em;
+    }
+
+    #accordion {
+        width: 100%;
+    }
+}

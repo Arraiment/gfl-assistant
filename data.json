@@ -1,0 +1,25 @@
+[
+    {
+        "url" : "https://www.gflanalysis.com/wiki/Main_Page",
+        "searchBox" : "#searchInput",
+        "searchResults" : "ul.mw-search-results",
+        "analysisText" : ".body-analysis",
+        "dollTitle" : "#firstHeading"
+    },
+
+    {
+        "url" : "https://gfl.matsuda.tips/dolls/",
+        "searchBox" : "#qry",
+        "searchResults" : ".text ul",
+        "analysisText" : ".notes",
+        "dollTitle" : "h2.centered"
+    },
+
+    {
+        "url" : "https://gamepress.gg/girlsfrontline/",
+        "searchBox" : "#edit-query",
+        "searchResults" : "#block-gamepressbase-content .view-site-search",
+        "analysisText" : "#t-doll-overview",
+        "dollTitle" : "#page-title h1"
+    }
+]

@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        include header.pug
+        style
+            include style.css
+    body
+        div.container.choices
+            h1 GFL Assistant
+            form(action = '/search' method = 'get')
+                input.mb-5(name = 'dollqry' placeholder = 'Find a doll...' type = 'search')
