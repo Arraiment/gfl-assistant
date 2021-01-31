@@ -8,19 +8,20 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: #0D0D0D;
+    color: #E6E6E6;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
 
 h1 {
-    color: #f0b000;
+    color: #EFC144;
     font-size: 9vw;
+    text-align: center;
 }
 
 h2 {
-    color: #f0b000;
+    color: #EFC144;
     font-size: 5vw;
 }
 
@@ -30,10 +31,10 @@ h5 {
 }
 
 input {
-    border: 2px solid #f0b000;
+    border: 2px solid #EFC144;
     border-radius: 20px;
     background-color: transparent;
-    color: white;
+    color: #E6E6E6;
     padding: 1.25em 2em;
     width: 55vw;
 }
@@ -43,7 +44,7 @@ img {
 }
 
 a {
-    color: #f0b000;
+    color: #EFC144;
 }
 
 a:hover {
@@ -57,10 +58,10 @@ a:hover {
 }
 
 .card {
-    border: 2px solid #f0b000;
+    border: 2px solid #EFC144;
     border-radius: 20px;
     background-color: transparent;
-    color: white;
+    color: #E6E6E6;
     padding: .5em 1em;
     margin-bottom: .5em;
 }
@@ -73,8 +74,9 @@ a:hover {
     font-size: 1em;
     margin: 0;
 }
+
 .card-header {
-    color: #f0b000;
+    color: #EFC144;
     text-align: left;
     font-weight: 400;
     font-size: 1.5em;
@@ -87,7 +89,7 @@ a:hover {
 .list-group-item {
     border: none;
     background-color: transparent;
-    color: white;
+    color: #E6E6E6;
 }
 
 .choices {
@@ -98,20 +100,21 @@ a:hover {
     flex-direction: column;
     text-align: left;
 }
+
 .row {
     width: 100%;
     margin: 0;
 }
 
 .box .accordioBtn {
-  width: 100%;
-  text-align: left;
-  border: 2px solid #f0b000;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  padding: .5em 1em;
-  margin-bottom: .5em;
+    width: 100%;
+    text-align: left;
+    border: 2px solid #EFC144;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #E6E6E6;
+    padding: .5em 1em;
+    margin-bottom: .5em;
 }
 
 @media (max-width: 1000px) {
@@ -121,17 +124,22 @@ a:hover {
 
     h2 {
         font-size: 9vw;
+        margin-bottom: 2vh;
+    }
+
+    h5 {
+        font-size: 6vw;
     }
 
     input {
         width: 80vw;
     }
 
-    .card-header{
+    .card-header {
         font-size: 5vw;
     }
 
-    .box .accordioBtn{
+    .box .accordioBtn {
         margin-bottom: .25em;
     }
 
