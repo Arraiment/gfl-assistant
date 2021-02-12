@@ -6,7 +6,8 @@ async function read(dollName) {
 
     // creates browser instance
     const browser = await puppeteer.launch({
-        ignoreHTTPSErrors: true
+        ignoreHTTPSErrors: true,
+        args: ['--no-sandbox']
     });
 
     // opens pages for 3 websites
