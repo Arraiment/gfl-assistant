@@ -90,7 +90,8 @@ async function getAnalysis(links) {
     let data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
 
     const browser = await puppeteer.launch({
-        ignoreHTTPSErrors: true
+        ignoreHTTPSErrors: true,
+        args: ['--no-sandbox']
     });
     await pageFactory(browser, links);
     let pages = await browser.pages();      // array of the pages
