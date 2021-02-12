@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Arraiment",
   "license": "ISC",
@@ -16,8 +17,5 @@
   },
   "devDependencies": {
     "eslint": "^7.18.0"
-  }
-  "scripts": {
-    "start": "node index.js"
   }
 }
