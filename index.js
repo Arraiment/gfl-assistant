@@ -60,7 +60,7 @@ app.post('/result', (req, res) => {
 
 // add router in the Express app.
 app.use("/", router);
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 5000);
 
 
 function get_links(links, choices) {
